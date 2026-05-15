@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">Portfolio</a>
+
+                <!-- HAMBURGER BUTTON -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- NAV MENU -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="achivements.html" class="nav-link">Achivements</a></li>
+                    <li><a href="certificate.html" class="nav-link">Certificates</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Blog</span>
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-intro">Check out my recent blog posts where I share insights on design, development, and the latest industry trends.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/pcbarticle.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 10, 2025</span>
+                            <span class="blog-comments">156 Comments</span>
+                        </div>
+                        <h3 class="blog-title">Top 10 Common Mistakes Beginners Make in PCB Designing</h3>
+                        <p class="blog-excerpt">Designing a PCB may look simple, but beginners often overlook small details that lead to major problems in the final circuit. In this article, we break down the top 10 common mistakes new designers make and how you can avoid them for a clean, reliable PCB design.</p>
+                        <a href="pcbmistake.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/iot article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 5, 2025</span>
+                            <span class="blog-comments">89 Comments</span>
+                        </div>
+                        <h3 class="blog-title">Top 10 IoT Tools Every Developer Should Know</h3>
+                        <p class="blog-excerpt">The Internet of Things is evolving faster than ever, and choosing the right tools can make or break your project’s success. Whether you're building smart home systems, industrial automation, or connected devices, these IoT tools are essential for efficient development, deployment, and debugging.</p>
+                        <a href="iotarticle.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/esp article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 28, 2025</span>
+                            <span class="blog-comments">234 Comments</span>
+                        </div>
+                        <h3 class="blog-title">A Beginner-Friendly Guide to ESP32 & ESP8266 for IoT Projects</h3>
+                        <p class="blog-excerpt">The ESP32 and ESP8266 microcontrollers have quickly become the go-to choice for beginners stepping into the world of IoT development. Known for their low cost, built-in Wi-Fi capabilities, and versatility, these boards make it incredibly easy to turn ideas into connected smart devices.</p>
+                        <a href="espguidearticle.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/sensor article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 20, 2025</span>
+                            <span class="blog-comments">178 Comments</span>
+                        </div>
+                        <h3 class="blog-title">How Sensors Work in Robotics: IR, Ultrasonic, MQ, Flame Sensors</h3>
+                        <p class="blog-excerpt">Sensors are the eyes, ears, and nose of a robot—allowing it to detect obstacles, measure distance, sense gases, and even identify fire. In this article, we break down how IR, ultrasonic, MQ, and flame sensors work, and how they help robots interact intelligently with their environment.</p>
+                        <a href="sensorarticle.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/simtool article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 15, 2025</span>
+                            <span class="blog-comments">92 Comments</span>
+                        </div>
+                        <h3 class="blog-title">Best Online Circuit Simulation Tools for Students</h3>
+                        <p class="blog-excerpt">Online circuit simulation tools have become essential for students who want to practice electronics without needing physical components. These platforms offer easy-to-use virtual environments where beginners can design, test, and experiment with circuits anytime, anywhere.</p>
+                        <a href="simtoolarticle.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/mldl article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Oct 8, 2025</span>
+                            <span class="blog-comments">145 Comments</span>
+                        </div>
+                        <h3 class="blog-title">Difference Between Machine Learning and Deep Learning</h3>
+                        <p class="blog-excerpt">Machine Learning and Deep Learning are two core branches of artificial intelligence, yet many beginners struggle to understand how they differ. While both aim to make machines learn from data, the depth of learning and the way they process information set them apart.</p>
+                        <a href="aimlarticle.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Portfolio<br>Divyansh Srivastav</h3>
+                    <p>Embedded Systems | IoT Developer | PCB Designer | CAD Modeler<br>Delivering smart, efficient, and reliable electronic solutions.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Quick Links</h4>
+                    <div class="social-links">
+                        <a href="index.html" class="social-link">Home</a>
+                        <a href="about.html" class="social-link">About</a>
+                        <a href="portfolio.html" class="social-link">Portfolio</a>
+                        <a href="contact.html" class="social-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Email</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Divyansh Srivastav — All Rights Reserved<br>Crafting Intelligent Hardware with Precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking any link
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+    const track = document.getElementById('toolsTrack');
+    track.innerHTML += track.innerHTML;
+</script>
+
+
+
+
+
+</html>

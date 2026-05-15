@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">Portfolio</a>
+
+                <!-- HAMBURGER BUTTON -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- NAV MENU -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="achivements.html" class="nav-link">Achivements</a></li>
+                    <li><a href="certificate.html" class="nav-link active">Certificates</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+<!--====================================
+Start of  UNDER MAINTAANENCE PORTION
+======================================-->
+
+    <section style="
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #6EE7FF, #8B5CF6, #FF66C4);
+    background-size: 300% 300%;
+    animation: cartoonBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+">
+
+    <!-- Cartoon Gear -->
+    <div style="
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 12%;
+        left: 8%;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        animation: spinGear 6s linear infinite;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/481/481873.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.8;
+        filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.2));
+    "></div>
+
+    <!-- Cartoon Robot -->
+    <div style="
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: floatRobot 4s ease-in-out infinite;
+        opacity: 0.9;
+    "></div>
+
+    <!-- Center Content -->
+    <div style="text-align:center; color:white; z-index:10; text-shadow:0px 4px 10px rgba(0,0,0,0.4);">
+        
+        <h1 style="
+            font-size: 55px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+        ">
+            🛠️ Under Maintenance
+        </h1>
+
+        <p style="
+            font-size: 22px;
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: 'Poppins', sans-serif;
+            opacity: 0.95;
+        ">
+            Our workshop bots are fixing things!  
+            Please check back in a little while 👨‍🔧🤖
+        </p>
+    </div>
+
+</section>
+
+
+<style>
+@keyframes cartoonBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes spinGear {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes floatRobot {
+    0%,100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-25px) rotate(2deg); }
+}
+</style>
+
+
+<!--====================================
+End of  UNDER MAINTAANENCE PORTION
+======================================-->
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Portfolio<br>Divyansh Srivastav</h3>
+                    <p>Embedded Systems | IoT Developer | PCB Designer | CAD Modeler<br>Delivering smart, efficient, and reliable electronic solutions.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Quick Links</h4>
+                    <div class="social-links">
+                        <a href="index.html" class="social-link">Home</a>
+                        <a href="about.html" class="social-link">About</a>
+                        <a href="portfolio.html" class="social-link">Portfolio</a>
+                        <a href="contact.html" class="social-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Email</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Divyansh Srivastav — All Rights Reserved<br>Crafting Intelligent Hardware with Precision.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+</body>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking any link
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+    const track = document.getElementById('toolsTrack');
+    track.innerHTML += track.innerHTML;
+</script>
+
+
+
+
+
+</html>

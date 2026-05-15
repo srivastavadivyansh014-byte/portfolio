@@ -8,21 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="#home" class="logo">Portfolio</a>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#process" class="nav-link">Process</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#blog" class="nav-link">Blog</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+
+                <!-- HAMBURGER BUTTON -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- NAV MENU -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="achivements.html" class="nav-link">Achivements</a></li>
+                    <li><a href="certificate.html" class="nav-link">Certificates</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -32,21 +45,21 @@
         <div class="container">
             <div class="hero-content">
                 <p class="hero-greeting fade-in">Hello, I'm</p>
-                <h1 class="hero-title fade-in-delay-1">Alex Morgan</h1>
-                <h2 class="hero-subtitle fade-in-delay-2">Creative Designer & Developer</h2>
-                <p class="hero-description fade-in-delay-3">I create immersive and beautiful web experiences through carefully crafted design and clean code. Based in New York, working with clients worldwide.</p>
+                <h1 class="hero-title fade-in-delay-1">Divyansh Srivastav</h1>
+                <h2 class="hero-subtitle fade-in-delay-2">Electronics Engineer</h2>
+                <p class="hero-description fade-in-delay-3">I create intelligent and efficient embedded solutions through precise engineering and reliable code. Based in India, building smart hardware systems and IoT-driven innovations for clients and projects across various domains.</p>
                 <div class="hero-stats fade-in-delay-4">
                     <div class="stat-item">
-                        <h3 class="stat-number">12+</h3>
+                        <h3 class="stat-number">2+</h3>
                         <p class="stat-label">Years Experience</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="stat-number">300+</h3>
+                        <h3 class="stat-number">30+</h3>
                         <p class="stat-label">Projects Completed</p>
                     </div>
                     <div class="stat-item">
-                        <h3 class="stat-number">95</h3>
-                        <p class="stat-label">Happy Clients</p>
+                        <h3 class="stat-number">400+</h3>
+                        <p class="stat-label">Students Trained</p>
                     </div>
                 </div>
                 <div class="hero-buttons fade-in-delay-5">
@@ -65,34 +78,35 @@
             <div class="about-grid">
                 <div class="about-image">
                     <div class="image-placeholder">
+                        <img src="images/new.png" width="100%"  alt="About Me Image">
                         <div class="image-decoration"></div>
                     </div>
                 </div>
                 <div class="about-content">
                     <span class="section-label">About Me</span>
-                    <h2 class="section-title">I Am Professional User Experience Designer</h2>
-                    <p class="section-description">I design and develop services for customers specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences that feel intuitive and perform seamlessly.</p>
-                    <p class="section-description">Every layout, animation, and component is crafted with intention — merging usability with visual clarity to create memorable digital products.</p>
+                    <h2 class="section-title">I Am Embedded Systems & Robotics Developer</h2>
+                    <p class="section-description" style="text-align: justify;">An Embedded Systems and IoT Developer specializing in microcontroller-based hardware, sensor integration, and automation solutions using platforms like Arduino, ESP32 and Raspberry.</p>
+                    <p class="section-description" style="text-align: justify;">Every circuit, sensor, and line of code is designed with purpose — blending precision with innovation to build reliable embedded and IoT systems that solve real-world problems. A PCB and Circuit Design Developer skilled in schematic design, board layout, and component optimization using tools like Altium, EasyEDA and KiCad for reliable embedded and IoT hardware.</p>
                     <div class="about-skills">
                         <div class="skill-item">
-                            <div class="skill-icon">UI</div>
-                            <h4>UI Design</h4>
-                            <p>Creating beautiful and functional interfaces</p>
+                            <div class="skill-icon">⚡</div>
+                            <h4>PCB Design</h4>
+                            <p>“Where ideas become circuits and circuits become reality.”</p>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">UX</div>
-                            <h4>UX Research</h4>
-                            <p>Understanding user needs and behaviors</p>
+                            <div class="skill-icon">🌐</div>
+                            <h4>ES & IOT</h4>
+                            <p>“Embedded systems shape the logic; IoT gives it a voice.”</p>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">{ }</div>
-                            <h4>Development</h4>
-                            <p>Building responsive web applications</p>
+                            <div class="skill-icon">🤖</div>
+                            <h4>AI/ML</h4>
+                            <p>“Where algorithms learn, innovation begins.”</p>
                         </div>
                     </div>
                     <div class="about-buttons">
                         <a href="#portfolio" class="btn btn-primary">My Projects</a>
-                        <a href="#" class="btn btn-outline">Download CV</a>
+                        <a href="docs/Resume_Divyansh.pdf" class="btn btn-outline" target="_blank" download>Download CV</a>
                     </div>
                 </div>
             </div>
@@ -104,148 +118,229 @@
             <div class="section-header">
                 <span class="section-label">Work Process</span>
                 <h2 class="section-title">How I Work</h2>
-                <p class="section-intro">Driven by design and powered by code, I create digital interfaces that feel intuitive and perform seamlessly. Every project follows a structured approach to ensure the best results.</p>
+                <p class="section-intro">Driven by innovation and powered by embedded intelligence, I build smart systems that sense, process, and respond seamlessly. Every project follows a precise engineering workflow to ensure reliable performance and impactful results.</p>
             </div>
             <div class="process-timeline">
                 <div class="process-item">
                     <div class="process-number">01</div>
                     <div class="process-content">
                         <h3>Research</h3>
-                        <p>Design meets function in every pixel, blending clarity with intuitive motion. Understanding your business goals and user needs.</p>
+                        <p style="text-align: justify;">Design meets engineering in every circuit, blending precision with intelligent functionality. Understanding system requirements, real-world constraints, and user needs to build reliable embedded and IoT solutions.</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">02</div>
                     <div class="process-content">
                         <h3>Analyze</h3>
-                        <p>Crafting clean, thoughtful interfaces where form flows seamlessly into function and clarity drives every decision.</p>
+                        <p style="text-align: justify;">Crafting clean and efficient embedded solutions where hardware and code work seamlessly together, and precision drives every engineering decision.</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">03</div>
                     <div class="process-content">
                         <h3>Design</h3>
-                        <p>I design seamless digital experiences with precision, purpose, and a touch of elegance that resonates with users.</p>
+                        <p style="text-align: justify;">I design reliable embedded and IoT systems with precision, purpose, and engineering clarity, creating solutions that perform seamlessly in real-world applications.</p>
                     </div>
                 </div>
                 <div class="process-item">
                     <div class="process-number">04</div>
                     <div class="process-content">
                         <h3>Launch</h3>
-                        <p>I craft digital products where thoughtful design meets performance-driven, responsive development for real impact.</p>
+                        <p style="text-align: justify;">I build embedded and IoT solutions where smart engineering meets reliable performance, delivering systems that create real impact in practical applications.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="tools" class="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tools & Software</span>
+                <h2 class="section-title">Technologies I Work With</h2>
+               <p class="section-intro">Here are some of the essential tools, platforms, and software I use to design, develop, and build embedded, IoT, CAD, and automation systems.</p>
+           </div>
+        
+           <div class="tools-marquee">
+                <div class="tools-track" id="toolsTrack">
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/vs.png" alt="Bulb"></div>
+                        <p class="tool-name">VS Code</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/easyeda.png" alt="EasyEDA"></div>
+                        <p class="tool-name">EasyEDA</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/altium.png" alt="ESP32"></div>
+                                      <p class="tool-name">Altium</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/autocad.png" alt="CAD"></div>
+                        <p class="tool-name">AutoCAD</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/thonny.png" alt="Blynk"></div>
+                        <p class="tool-name">Thonny</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/wokwi.png" alt="VS Code"></div>
+                        <p class="tool-name">Wokwi</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/blynk.png" alt="VS Code"></div>
+                        <p class="tool-name">Blynk IoT</p>
+                    </div>
+    
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/tinkercad.png" alt="VS Code"></div>
+                        <p class="tool-name">Tinker CAD</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/python.png" alt="Python"></div>
+                        <p class="tool-name">Python</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/proteus.png" alt="Proteus"></div>
+                        <p class="tool-name">Proteus</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/arduino.png" alt="VS Code"></div>
+                        <p class="tool-name">Arduino</p>
+                    </div>
+
+                    <div class="tool-box">
+                        <div class="tool-item"><img src="images/raspberry.png" alt="VS Code"></div>
+                        <p class="tool-name">Raspberry Pi</p>
+                    </div>
+
+    
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Portfolio</span>
                 <h2 class="section-title">Recent Work</h2>
-                <p class="section-intro">Here's a selection of my recent work, showcasing my skills in creating user-centric and visually appealing interfaces.</p>
+                <p class="section-intro">Here is a selection of my recent projects, demonstrating my skills in developing reliable, efficient, and real-world embedded, IoT solutions and CAD.</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <span class="portfolio-icon">📱</span>
+                             <img src="images/home1.jpg" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>E-Commerce Platform</h3>
-                            <p>UI/UX Design</p>
+                            <h3>SafeHome IoT Automation</h3>
+                            <p>Smart Home</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">UI-UX DESIGN</span>
-                        <h4>E-Commerce Platform</h4>
+                        <span class="portfolio-category">IOT Technology</span>
+                        <h4>SafeHome IoT Automation</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <span class="portfolio-icon">💼</span>
+                             <img src="images/plant.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Product Admin Dashboard</h3>
-                            <p>Web Development</p>
+                            <h3>PlantCare Automation</h3>
+                            <p>Smart Agriculture</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">UI-UX DESIGN</span>
-                        <h4>Product Admin Dashboard</h4>
+                        <span class="portfolio-category">Embedded System</span>
+                        <h4>PlantCare Automation</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <span class="portfolio-icon">🎨</span>
+                             <img src="images/lock.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Creative Agency Website</h3>
-                            <p>Brand Design</p>
+                            <h3>Door Lock System</h3>
+                            <p>Security System</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">WEB DESIGN</span>
-                        <h4>Creative Agency Website</h4>
+                        <span class="portfolio-category">Embedded System</span>
+                        <h4>Door Lock System</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                            <span class="portfolio-icon">📊</span>
+                             <img src="images/pcb.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Analytics Dashboard</h3>
-                            <p>Data Visualization</p>
+                            <h3>IoT Trainer Kit PCB</h3>
+                            <p>PCB Design</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">UI-UX DESIGN</span>
-                        <h4>Analytics Dashboard</h4>
+                        <span class="portfolio-category">PCB DESIGN</span>
+                        <h4>IoT Kit PCB</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <span class="portfolio-icon">🎯</span>
+                            <img src="images/pms.jpg" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Mobile App Design</h3>
-                            <p>iOS & Android</p>
+                            <h3>Patient Monitoring System</h3>
+                            <p>Smart Healthcare Technology</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">MOBILE DESIGN</span>
-                        <h4>Mobile App Design</h4>
+                        <span class="portfolio-category">IOT Technology</span>
+                        <h4>Patient Monitoring System</h4>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                            <span class="portfolio-icon">🚀</span>
+                            <img src="images/ewd.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>SaaS Landing Page</h3>
-                            <p>Marketing Design</p>
+                            <h3>Home Plan EWD</h3>
+                            <p>AutoCAD Electrical</p>
                             <a href="#" class="portfolio-link">View Project →</a>
                         </div>
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">WEB DESIGN</span>
-                        <h4>SaaS Landing Page</h4>
+                        <span class="portfolio-category">CAD Design</span>
+                        <h4>Home Plan EWD</h4>
                     </div>
                 </div>
             </div>
             <div class="portfolio-cta">
-                <a href="#" class="btn btn-outline-large">Load More Projects</a>
+                <a href="portfolio.html" class="btn btn-outline-large">Load More Projects</a>
             </div>
         </div>
     </section>
@@ -270,88 +365,103 @@
             <div class="blog-grid">
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/pcbarticle.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Nov 10, 2025</span>
                             <span class="blog-comments">156 Comments</span>
                         </div>
-                        <h3 class="blog-title">Designing Engaging User Interfaces for Modern Web Apps</h3>
-                        <p class="blog-excerpt">Explore the principles of creating intuitive and visually appealing interfaces that keep users engaged...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">Top 10 Common Mistakes Beginners Make in PCB Designing</h3>
+                        <p class="blog-excerpt">Designing a PCB may look simple, but beginners often overlook small details that lead to major problems in the final circuit. In this article, we break down the top 10 common mistakes new designers make and how you can avoid them for a clean, reliable PCB design.</p>
+                        <a href="pcbmistake.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/iot article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Nov 5, 2025</span>
                             <span class="blog-comments">89 Comments</span>
                         </div>
-                        <h3 class="blog-title">Tips for Effective Dashboard Layouts and Data Visualization</h3>
-                        <p class="blog-excerpt">Learn how to structure dashboards that present complex data in an easily digestible format...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">Top 10 IoT Tools Every Developer Should Know</h3>
+                        <p class="blog-excerpt">The Internet of Things is evolving faster than ever, and choosing the right tools can make or break your project’s success. Whether you're building smart home systems, industrial automation, or connected devices, these IoT tools are essential for efficient development, deployment, and debugging.</p>
+                        <a href="iotarticle.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/esp article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Oct 28, 2025</span>
                             <span class="blog-comments">234 Comments</span>
                         </div>
-                        <h3 class="blog-title">How to Visualize Data for Better Product Understanding</h3>
-                        <p class="blog-excerpt">Discover techniques for turning raw data into compelling visual stories that drive decisions...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">A Beginner-Friendly Guide to ESP32 & ESP8266 for IoT Projects</h3>
+                        <p class="blog-excerpt">The ESP32 and ESP8266 microcontrollers have quickly become the go-to choice for beginners stepping into the world of IoT development. Known for their low cost, built-in Wi-Fi capabilities, and versatility, these boards make it incredibly easy to turn ideas into connected smart devices.</p>
+                        <a href="espguidearticle.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/sensor article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Oct 20, 2025</span>
                             <span class="blog-comments">178 Comments</span>
                         </div>
-                        <h3 class="blog-title">Responsive Design: Adapting to All Devices Seamlessly</h3>
-                        <p class="blog-excerpt">Master the art of creating responsive layouts that work beautifully across all screen sizes...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">How Sensors Work in Robotics: IR, Ultrasonic, MQ, Flame Sensors</h3>
+                        <p class="blog-excerpt">Sensors are the eyes, ears, and nose of a robot—allowing it to detect obstacles, measure distance, sense gases, and even identify fire. In this article, we break down how IR, ultrasonic, MQ, and flame sensors work, and how they help robots interact intelligently with their environment.</p>
+                        <a href="sensorarticle.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/simtool article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Oct 15, 2025</span>
                             <span class="blog-comments">92 Comments</span>
                         </div>
-                        <h3 class="blog-title">Streamlining Workflows with UI/UX Best Practices</h3>
-                        <p class="blog-excerpt">Optimize your design process with proven methodologies that enhance efficiency and quality...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">Best Online Circuit Simulation Tools for Students</h3>
+                        <p class="blog-excerpt">Online circuit simulation tools have become essential for students who want to practice electronics without needing physical components. These platforms offer easy-to-use virtual environments where beginners can design, test, and experiment with circuits anytime, anywhere.</p>
+                        <a href="simtoolarticle.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <div class="blog-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                        <div class="portfolio-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <img src="images/mldl article.png" alt="Project Image" width="92%" height="92%"  margin="10px" object-fit="cover" style="border-radius:10px;">
+                        </div>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-date">Oct 8, 2025</span>
                             <span class="blog-comments">145 Comments</span>
                         </div>
-                        <h3 class="blog-title">Optimizing Interface Components for Performance</h3>
-                        <p class="blog-excerpt">Ensure your web applications run smoothly with these performance optimization techniques...</p>
-                        <a href="#" class="blog-link">Read More →</a>
+                        <h3 class="blog-title">Difference Between Machine Learning and Deep Learning</h3>
+                        <p class="blog-excerpt">Machine Learning and Deep Learning are two core branches of artificial intelligence, yet many beginners struggle to understand how they differ. While both aim to make machines learn from data, the depth of learning and the way they process information set them apart.</p>
+                        <a href="aimlarticle.html" class="blog-link">Read More →</a>
                     </div>
                 </article>
+            </div>
+            <div class="portfolio-cta">
+                <a href="blog.html" class="btn btn-outline-large">Load More Blogs</a>
             </div>
         </div>
     </section>
@@ -361,71 +471,78 @@
             <div class="section-header">
                 <span class="section-label">Services</span>
                 <h2 class="section-title">What I Do</h2>
-                <p class="section-intro">I specialize in designing user experiences, crafting engaging interfaces, and building robust web applications that deliver value and usability.</p>
+                <p class="section-intro">I specialize in IoT development, embedded systems, robotics, and web design. I create smart automation projects and responsive web applications that are practical, efficient, and user-focused.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>🎨</span>
+                        <span>🖥️</span>
                     </div>
-                    <h3 class="service-title">User Experience (UX)</h3>
-                    <p class="service-description">I design intuitive and enjoyable experiences by understanding user needs, conducting research, and creating wireframes and prototypes that enhance usability.</p>
+                    <h3 class="service-title">Mini Projects</h3>
+                    <p class="service-description">I provide customized mini embedded and IoT projects for final-year students, complete with clean hardware design and optimized code. Each project includes clear documentation and guidance to help students understand and present their work confidently.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🛰️</span>
+                    </div>
+                    <h3 class="service-title">Major Projects</h3>
+                    <p class="service-description">I offer full-scale major project development in embedded systems and IoT, tailored to final-year engineering requirements. Each project features advanced hardware integration, efficient software architecture, and complete support for documentation and presentation.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <span>✨</span>
                     </div>
-                    <h3 class="service-title">User Interface (UI)</h3>
-                    <p class="service-description">I craft visually appealing and consistent interfaces, focusing on layout, color, and typography to ensure a seamless and engaging user journey.</p>
+                    <h3 class="service-title">PCB Design</h3>
+                    <p class="service-description">I provide PCB design services from basic single-layer boards to advanced multi-layer circuits with professional routing, component placement, and DFM-ready outputs. Each design is optimized for performance, reliability, and seamless fabrication—perfect for students, makers, and startups.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>💻</span>
+                        <span>🧊</span>
                     </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-description">I build responsive and high-performance web applications using modern technologies, ensuring accessibility, scalability, and maintainability.</p>
+                    <h3 class="service-title">3D Printing+CAD Modeling</h3>
+                    <p class="service-description">I offer 3D printing and CAD modeling services for custom project enclosures, mechanical parts, and prototyping needs. Every design is precisely modeled and printed to ensure perfect fit, durability, and a professional finish for your projects.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>📱</span>
+                        <span>⚡</span>
                     </div>
-                    <h3 class="service-title">Mobile Design</h3>
-                    <p class="service-description">Creating seamless mobile experiences with intuitive navigation and responsive layouts that work beautifully on any device size.</p>
+                    <h3 class="service-title">Project Development Assistance</h3>
+                    <p class="service-description">I provide complete project development services for students and professionals, from concept creation to final implementation. Each project includes clear documentation, optimized hardware–software integration, and guidance to ensure smooth understanding and presentation.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <span>🎯</span>
+                        <span>📐</span>
                     </div>
-                    <h3 class="service-title">Brand Identity</h3>
-                    <p class="service-description">Developing cohesive brand identities that reflect your values and resonate with your target audience through visual storytelling.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <span>🚀</span>
-                    </div>
-                    <h3 class="service-title">Digital Strategy</h3>
-                    <p class="service-description">Providing strategic guidance to help you achieve your digital goals with data-driven insights and innovative solutions.</p>
+                    <h3 class="service-title">Electrical Wiring Diagram</h3>
+                    <p class="service-description">I create accurate and easy-to-understand electrical wiring diagrams for homes, labs, and small projects. Each diagram is professionally designed with proper symbols, safety standards, and clear labeling for hassle-free implementation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials">
+
+    <!--======================
+        Start of Testtimonials
+        What my mentor Says
+        =====================-->
+
+    <!--<section class="testimonials">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Testimonials</span>
-                <h2 class="section-title">What Clients Say</h2>
+                <h2 class="section-title">What My Mentor Says</h2>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-quote">
-                        <p>"From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!"</p>
+                        <p>“Divyansh demonstrates a strong command of Embedded Systems, IoT development, and CAD-based design. His disciplined approach, attention to detail, and eagerness to learn make him a highly dependable and capable student in both theoretical and practical project work.”</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">EH</div>
+                        <div class="author-avatar">--</div>
                         <div class="author-info">
-                            <h4>Esther Howard</h4>
-                            <p>Managing Director, ABC Company</p>
+                            <h4>------</h4>
+                            <p>-------</p>
+                            <p>-------</p>
                         </div>
                     </div>
                 </div>
@@ -455,7 +572,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+    <!--======================
+        End of Testtimonials
+        What my mentor Says
+        =====================-->
 
     <section id="contact" class="contact">
         <div class="container">
@@ -469,41 +590,61 @@
                             <div class="contact-icon">📍</div>
                             <div>
                                 <h4>Address</h4>
-                                <p>New York, NY 10001</p>
+                                <p>67, Kaushalpuri, Hardoi(U.P.)</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">✉️</div>
                             <div>
                                 <h4>Email</h4>
-                                <p>hello@alexmorgan.com</p>
+                                <a href="mailto:srivastavadivyansh014@gmail.com" style="color: var(--text-light); text-decoration: none;">srivastavadivyansh014@gmail.com</a>
+                                <!-- <p>srivastavadivyansh014@gmail.com</p> -->
                             </div>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📱</div>
                             <div>
                                 <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
+                                <a href="tel:+917054388402" style="color: var(--text-light); text-decoration: none;">+91 70543 88402</a>
+                                <!-- <p>+91 70543 88402</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="60471efa-9d40-4577-9622-b9dc74f5483e">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="hidden" name="redirect" value="https://portfoilodivyansh.netlify.app/mail.html">
+
+
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Your Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -513,32 +654,60 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3 class="footer-logo">Portfolio</h3>
-                    <p>Creating beautiful digital experiences that make a difference.</p>
+                    <h3 class="footer-logo">Portfolio<br>Divyansh Srivastav</h3>
+                    <p>Embedded Systems | IoT Developer | PCB Designer | CAD Modeler<br>Delivering smart, efficient, and reliable electronic solutions.</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-social">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <div class="social-links">
+                        <a href="index.html" class="social-link">Home</a>
+                        <a href="about.html" class="social-link">About</a>
+                        <a href="portfolio.html" class="social-link">Portfolio</a>
+                        <a href="contact.html" class="social-link">Contact</a>
+                    </div>
                 </div>
                 <div class="footer-social">
                     <h4>Follow Me</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Email</a>
                         <a href="#" class="social-link">LinkedIn</a>
                         <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">Dribbble</a>
+                        <a href="#" class="social-link">Instagram</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Portfolio. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Divyansh Srivastav — All Rights Reserved<br>Crafting Intelligent Hardware with Precision.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    
+
+
 </body>
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking any link
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+    const track = document.getElementById('toolsTrack');
+    track.innerHTML += track.innerHTML;
+</script>
+
 </html>

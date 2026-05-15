@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">Portfolio</a>
+
+                <!-- HAMBURGER BUTTON -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- NAV MENU -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="achivements.html" class="nav-link">Achivements</a></li>
+                    <li><a href="certificate.html" class="nav-link">Certificates</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+        </nav>
+
+
+
+        <!-- Blog Header -->
+<section class="hero" style="min-height:50vh;">
+    <div class="hero-content">
+        <h1 class="hero-title" style="font-size:48px;">Top 10 Common Mistakes in PCB Designing</h1>
+        <p class="hero-description" style="max-width:800px;margin:auto;">
+            Designing a PCB may look simple, but beginners often overlook small details that lead to major problems in the final circuit. In this article, we break down the top 10 common mistakes new designers make and how you can avoid them for a clean, reliable PCB design.
+        </p>
+    </div>
+</section>
+
+<!-- Blog Body -->
+<section class="blog-content-section" style="padding:50px 0;">
+    <div class="container">
+
+        <!-- Thumbnail -->
+        <div style="text-align:center; margin-bottom:40px;">
+            <img src="images/pcbarticle.png"
+                 alt="PCB Mistakes"
+                 style="width:80%; max-width:900px; border-radius:15px; box-shadow: var(--shadow-lg);">
+        </div>
+
+        <article style="font-size:18px; line-height:1.9; color:var(--text-dark);">
+
+    <h2>1. Incorrect Trace Width</h2>
+    <p>
+        Many beginners use the same trace width everywhere without checking how much current each line carries. 
+        Thin traces heat up quickly, which can damage the PCB or cause unstable operation. 
+        Always calculate trace width using online tools like "PCB Trace Width Calculator" based on current and copper thickness.
+    </p>
+
+    <h2>2. Poor Component Placement</h2>
+    <p>
+        Components placed randomly make routing difficult and can create unnecessary noise. 
+        Always group components by function—power section, sensors, microcontroller, communication modules, etc. 
+        A clean layout improves signal flow and reduces EMI problems.
+    </p>
+
+    <h2>3. Wrong Grounding Strategy</h2>
+    <p>
+        Grounding is one of the most important parts of PCB design, but beginners usually ignore it. 
+        Avoid long ground paths, unnecessary splits, and floating grounds. 
+        Use a single solid ground plane to keep signals stable and reduce noise.
+    </p>
+
+    <h2>4. Ignoring Design Rule Checks (DRC)</h2>
+    <p>
+        Many new designers forget to run DRC before exporting Gerber files. 
+        DRC helps you catch spacing issues, unconnected pins, tiny clearances, or missing copper areas. 
+        Running DRC ensures your board is manufacturable and error-free.
+    </p>
+
+    <h2>5. Long Signal Traces</h2>
+    <p>
+        Longer traces act like antennas. They pick up noise and create delay, especially in high-speed signals like I2C, SPI, or USB. 
+        Keep critical traces short, direct, and properly routed to avoid signal distortion.
+    </p>
+
+    <h2>6. Incorrect Via Usage</h2>
+    <p>
+        Vias make routing easier, but too many vias increase resistance and reduce signal integrity. 
+        Beginners also often use very small vias that manufacturers cannot support. 
+        Use the right via sizes and avoid unnecessary via chains.
+    </p>
+
+    <h2>7. No Thermal Relief Pads</h2>
+    <p>
+        Connecting pads directly to a large copper area makes soldering difficult because heat spreads away quickly. 
+        Thermal relief pads help maintain consistent soldering and prevent cold joints. 
+        Always enable thermal relief for power and ground pads.
+    </p>
+
+    <h2>8. Forgetting Decoupling Capacitors</h2>
+    <p>
+        Every IC needs decoupling capacitors near power pins to filter noise. 
+        Beginners either don’t use them or place them too far from the IC. 
+        Keep decoupling capacitors as close as possible to the VCC and GND pins for stable performance.
+    </p>
+
+    <h2>9. Poor Silkscreen Layer Management</h2>
+    <p>
+        Silkscreen is meant to help assembly and troubleshooting, but beginners place labels over pads or vias. 
+        This makes soldering difficult and hides important information. 
+        Keep silkscreen clear and readable with proper component names.
+    </p>
+
+    <h2>10. Ignoring Manufacturer Capabilities</h2>
+    <p>
+        Not all manufacturers support the same minimum trace width, spacing, hole size, or copper thickness. 
+        Beginners often use values that are too small, resulting in rejected Gerber files. 
+        Always check your manufacturer’s design rules before starting the layout.
+    </p>
+
+    <br><br>
+
+    <div style="padding:20px; border-left:5px solid var(--primary-color); background:var(--bg-light); border-radius:10px;">
+        <h2>Final Thoughts</h2>
+        <p>
+            PCB designing is a skill that improves with practice. 
+            By avoiding these common mistakes, you can create boards that are reliable, noise-free, and ready for manufacturing. 
+            Focus on good placement, clean routing, strong grounding, and proper rule checks — and your designs will quickly move from beginner-level to professional quality.
+        </p>
+    </div>
+
+</article>
+
+
+        <br><br>
+
+        <!-- Back to Blog Button -->
+        <div style="text-align:center; margin-top:40px;">
+            <a href="blog.html" class="btn btn-primary">← Back to Blog</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Portfolio<br>Divyansh Srivastav</h3>
+                    <p>Embedded Systems | IoT Developer | PCB Designer | CAD Modeler<br>Delivering smart, efficient, and reliable electronic solutions.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Quick Links</h4>
+                    <div class="social-links">
+                        <a href="index.html" class="social-link">Home</a>
+                        <a href="about.html" class="social-link">About</a>
+                        <a href="portfolio.html" class="social-link">Portfolio</a>
+                        <a href="contact.html" class="social-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Email</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Divyansh Srivastav — All Rights Reserved<br>Crafting Intelligent Hardware with Precision.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    </body>
+    <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking any link
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        });
+    });
+    const track = document.getElementById('toolsTrack');
+    track.innerHTML += track.innerHTML;
+
+    
+
+
+    </script>
+
+
+
+
+</html>

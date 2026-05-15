@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Beginner-Friendly Guide to ESP32 & ESP8266</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="container">
+    <div class="nav-wrapper">
+        <a href="index.html" class="logo">Portfolio</a>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="achivements.html" class="nav-link">Achivements</a></li>
+            <li><a href="certificate.html" class="nav-link">Certificates</a></li>
+            <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" style="min-height:50vh;">
+<div class="hero-content">
+    <h1 class="hero-title" style="font-size:48px;">
+        A Beginner-Friendly Guide to ESP32 & ESP8266 for IoT Projects
+    </h1>
+    <p class="hero-description" style="max-width:800px;margin:auto;">
+        The ESP32 and ESP8266 microcontrollers have quickly become the go-to choice for beginners stepping into IoT development. 
+        Known for their low cost, built-in Wi-Fi capabilities, and versatility, these boards make it easy to turn ideas into connected smart devices.
+    </p>
+</div>
+</section>
+
+<!-- BLOG CONTENT -->
+<section class="blog-content-section" style="padding:50px 0;">
+<div class="container">
+
+    <!-- Thumbnail Image -->
+    <div style="text-align:center; margin-bottom:40px;">
+        <img src="images/esp article.png"
+             alt="ESP32 and ESP8266"
+             style="width:80%; max-width:900px; border-radius:15px; box-shadow: var(--shadow-lg);">
+    </div>
+
+<article style="font-size:18px; line-height:1.9; color:var(--text-dark);">
+
+<h2>1. What is ESP8266?</h2>
+<p>
+The ESP8266 is a low-cost Wi-Fi microcontroller developed by Espressif. 
+It allows microcontrollers to connect to Wi-Fi networks and communicate with the internet. 
+It is widely used in smart home systems, IoT sensors, and wireless automation projects.
+</p>
+
+<ul>
+<li>Built-in Wi-Fi</li>
+<li>Low power consumption</li>
+<li>Affordable and beginner-friendly</li>
+<li>Supports Arduino IDE</li>
+</ul>
+
+<h2>2. What is ESP32?</h2>
+<p>
+The ESP32 is the advanced version of the ESP8266. 
+It includes Wi-Fi + Bluetooth support, more GPIO pins, better performance, and dual-core processing. 
+It is perfect for complex IoT, robotics, and automation systems.
+</p>
+
+<ul>
+<li>Dual-core processor</li>
+<li>Wi-Fi + Bluetooth</li>
+<li>More memory and GPIO pins</li>
+<li>Ideal for advanced projects</li>
+</ul>
+
+<h2>3. Why Are They Popular for IoT?</h2>
+<p>
+ESP boards are popular because they combine networking and processing in one small, low-cost board. 
+You don’t need external Wi-Fi modules, making development simpler and cheaper.
+</p>
+
+<p>
+They are commonly used in:
+</p>
+
+<ul>
+<li>Home automation systems</li>
+<li>Smart irrigation systems</li>
+<li>Weather monitoring stations</li>
+<li>IoT dashboards with Blynk or Firebase</li>
+<li>Robotics and remote-controlled devices</li>
+</ul>
+
+<h2>4. Getting Started with ESP32 / ESP8266</h2>
+<p>
+To start building projects, you need:
+</p>
+
+<ul>
+<li>ESP32 or ESP8266 board</li>
+<li>USB cable</li>
+<li>Arduino IDE installed</li>
+<li>Board package installed via Board Manager</li>
+</ul>
+
+<p>
+After installation:
+</p>
+
+<ol>
+<li>Select your board from Tools → Board</li>
+<li>Select correct COM port</li>
+<li>Upload a simple Blink or Wi-Fi test program</li>
+</ol>
+
+<h2>5. Basic Example: Wi-Fi Connection Code</h2>
+
+<pre style="background:#111; color:#0f0; padding:20px; border-radius:10px; overflow:auto;">
+#include &lt;WiFi.h&gt;
+
+const char* ssid = "Your_SSID";
+const char* password = "Your_PASSWORD";
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting...");
+  }
+
+  Serial.println("Connected to WiFi!");
+}
+
+void loop() {
+}
+</pre>
+
+<h2>6. ESP32 vs ESP8266 – Which One Should You Choose?</h2>
+
+<table style="width:100%; border-collapse:collapse; margin-top:20px;">
+<tr style="background:var(--bg-light);">
+<th style="padding:10px; border:1px solid #ddd;">Feature</th>
+<th style="padding:10px; border:1px solid #ddd;">ESP8266</th>
+<th style="padding:10px; border:1px solid #ddd;">ESP32</th>
+</tr>
+<tr>
+<td style="padding:10px; border:1px solid #ddd;">Wi-Fi</td>
+<td style="padding:10px; border:1px solid #ddd;">Yes</td>
+<td style="padding:10px; border:1px solid #ddd;">Yes</td>
+</tr>
+<tr>
+<td style="padding:10px; border:1px solid #ddd;">Bluetooth</td>
+<td style="padding:10px; border:1px solid #ddd;">No</td>
+<td style="padding:10px; border:1px solid #ddd;">Yes</td>
+</tr>
+<tr>
+<td style="padding:10px; border:1px solid #ddd;">Performance</td>
+<td style="padding:10px; border:1px solid #ddd;">Moderate</td>
+<td style="padding:10px; border:1px solid #ddd;">High</td>
+</tr>
+<tr>
+<td style="padding:10px; border:1px solid #ddd;">Best For</td>
+<td style="padding:10px; border:1px solid #ddd;">Simple IoT</td>
+<td style="padding:10px; border:1px solid #ddd;">Advanced IoT & Robotics</td>
+</tr>
+</table>
+
+<br><br>
+
+<div style="padding:20px; border-left:5px solid var(--primary-color); background:var(--bg-light); border-radius:10px;">
+<h2>Final Thoughts</h2>
+<p>
+If you're a beginner, start with ESP8266 for simple IoT projects. 
+If you want more power, Bluetooth, and future scalability, choose ESP32. 
+Both boards are excellent for building smart, connected devices and learning real-world IoT development.
+</p>
+</div>
+
+</article>
+
+<br><br>
+
+<div style="text-align:center; margin-top:40px;">
+    <a href="blog.html" class="btn btn-primary">← Back to Blog</a>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3 class="footer-logo">Portfolio<br>Divyansh Srivastav</h3>
+            <p>Embedded Systems | IoT Developer | PCB Designer | CAD Modeler<br>Delivering smart, efficient, and reliable electronic solutions.</p>
+        </div>
+        <div class="footer-social">
+            <h4>Quick Links</h4>
+            <div class="social-links">
+                <a href="index.html" class="social-link">Home</a>
+                <a href="about.html" class="social-link">About</a>
+                <a href="portfolio.html" class="social-link">Portfolio</a>
+                <a href="contact.html" class="social-link">Contact</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Me</h4>
+            <div class="social-links">
+                <a href="#" class="social-link">Email</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Divyansh Srivastav — All Rights Reserved<br>Crafting Intelligent Hardware with Precision.</p>
+    </div>
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    });
+});
+</script>
+
+</body>
+</html>
